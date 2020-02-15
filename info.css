@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "BluuNext";
+  src: url("bluunext-bold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "ArchiveGrotesk";
+  src: url("archivgrotesktrial-regulartrial.otf") format("opentype");
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: tomato;
+}
+p {
+  font-family: "ArchiveGrotesk";
+  font-size: 50px;
+  color: white;
+}
+h1 {
+  font-family: "BluuNext";
+  font-weight: 400;
+  font-size: 50px;
+  color: white;
+}
+h2 {
+  font-family: "BluuNext";
+  font-weight: 400;
+  font-size: 30px;
+  color: white;
+}
+h3 {
+  font-family: "ArchiveGrotesk";
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+}
+h4 {
+  font-family: "ArchiveGrotesk";
+  font-size: 24px;
+  color: white;
+}
+
+img {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+}
+a {
+  text-decoration: none;
+  color: white;
+  transition-delay: 3ms;
+}
+a:hover {
+  font-style: italic;
+  transition-delay: 3ms;
+}
+a img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  display: none;
+}
+a:hover img {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+  cursor: default;
+}
+#nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -50px;
+  padding: 0 10px 0 10px;
+}
+.images {
+  position: fixed;
+  margin: auto auto; /* Will not center vertically and won't work in IE6/7. */
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.fr {
+  padding: 0 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+.back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: -30px;
+  margin-left: 6px;
+  font-size: 18px;
+}
