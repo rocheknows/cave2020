@@ -17,7 +17,7 @@ body {
 }
 p {
   font-family: "ArchiveGrotesk";
-  font-size: 50px;
+  font-size: 38px;
   color: white;
 }
 h1 {
@@ -74,18 +74,28 @@ a:hover img {
   color: tomato;
 }
 #nav {
+  background-color: black;
+  position: fixed;
+  width: 98.5vw;
   display: flex;
   justify-content: space-between;
   margin-top: -50px;
-  padding: 0 10px 0 10px;
+  margin-right: 30px;
+  padding: 0 0px 0 0px;
 }
 .images {
   position: fixed;
-  margin: auto auto; /* Will not center vertically and won't work in IE6/7. */
-  left: 0;
+  /* margin: auto auto; Will not center vertically and won't work in IE6/7. */
   right: 0;
-  z-index: 1;
+  top: 6%;
+  padding: 50px 20px 0 0;
+  z-index: 10;
+  height: 80vh;
+  object-fit: scale-down;
+  width: 50%;
+  margin: auto 0;
 }
+
 .fr {
   width: 100vw;
   display: flex;
@@ -93,4 +103,52 @@ a:hover img {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+}
+.main {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+@media only screen and (max-width: 839px) {
+  h1 {
+    font-size: 38px;
+  }
+  p {
+    font-size: 32px;
+  }
+  #nav {
+    margin-top: -40px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    width: 90%;
+  }
+  #nav {
+    margin-top: -30px;
+    width: 96%;
+  }
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  p {
+    font-size: 28px;
+  }
+  #nav {
+    margin-top: -40px;
+    padding: 10px;
+    width: 92%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  p {
+    font-size: 24px;
+  }
 }

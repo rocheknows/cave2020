@@ -23,7 +23,7 @@ p {
 h1 {
   font-family: "BluuNext";
   font-weight: 400;
-  font-size: 50px;
+  font-size: 40px;
   color: white;
 }
 h2 {
@@ -44,6 +44,15 @@ h4 {
   color: white;
 }
 
+h4 a:hover {
+  cursor: url(img/comp/cursor.png), pointer;
+}
+h5 {
+  font-family: "ArchiveGrotesk";
+  font-size: 14px;
+  color: white;
+  line-height: 0px;
+}
 img {
   position: fixed;
   display: flex;
@@ -55,10 +64,12 @@ a {
   text-decoration: none;
   color: white;
   transition-delay: 3ms;
+  cursor: url(img/comp/cursor.png), pointer;
 }
 a:hover {
   font-style: italic;
   transition-delay: 3ms;
+  cursor: url(img/comp/cursor.png), pointer;
 }
 a img {
   display: flex;
@@ -74,6 +85,7 @@ a:hover img {
   align-items: center;
   margin: auto auto;
   cursor: default;
+  cursor: url(img/comp/cursor.png), pointer;
 }
 #nav {
   display: flex;
@@ -87,6 +99,15 @@ a:hover img {
   left: 0;
   right: 0;
   z-index: -1;
+}
+.footer {
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  padding: 0px;
 }
 .fr {
   padding: 0 90px;
