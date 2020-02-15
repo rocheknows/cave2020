@@ -6,11 +6,14 @@
   font-family: "ArchiveGrotesk";
   src: url("archivgrotesktrial-regulartrial.otf") format("opentype");
 }
-
+* {
+  cursor: url(img/comp/cursor.png), pointer;
+}
 body {
   padding: 0;
   margin: 0;
   background-color: tomato;
+  cursor: url(img/comp/cursor.png), pointer;
 }
 p {
   font-family: "ArchiveGrotesk";
