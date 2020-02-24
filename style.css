@@ -110,7 +110,9 @@ a:hover img {
   flex-direction: column;
   width: 50%;
 }
-
+.preview {
+  display: none;
+}
 @media only screen and (max-width: 839px) {
   h1 {
     font-size: 38px;
